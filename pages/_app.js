@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import '../assets/styles/reset.css';
+import '../assets/styles/fonts.css';
 
 import Layout from '../components/Layout';
 
@@ -14,6 +15,8 @@ function MyApp({ Component, pageProps }) {
                     overflow-x: hidden;
                     padding: 0;
                     scroll-behavior: smooth;
+
+                    --color-accent: #d39f64;
                 }
 
                 a {
@@ -21,7 +24,7 @@ function MyApp({ Component, pageProps }) {
                 }
             `}</style>
             <Head>
-                <title>Lazy Lamb</title>
+                <title>Frontier Atelier</title>
             </Head>
             <Layout>
                 <Component {...pageProps} />

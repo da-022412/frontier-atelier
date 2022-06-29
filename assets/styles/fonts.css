@@ -1,0 +1,34 @@
+@font-face {
+    font-family: CabinetGroteskRegular;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/CabinetGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: CabinetGroteskBold;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/CabinetGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: CabinetGroteskExtralight;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/CabinetGrotesk-Extralight.ttf');
+}
+
+@font-face {
+    font-family: CabinetGroteskMedium;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/CabinetGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: CabinetGroteskLight;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/CabinetGrotesk-Light.ttf');
+}
