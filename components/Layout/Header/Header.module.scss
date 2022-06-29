@@ -1,6 +1,5 @@
 .header {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 1px solid #363636;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
     left: 0;
     position: sticky;
     top: 0;
@@ -10,9 +9,9 @@
 .header-container {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
     max-width: 90%;
-    padding: .75rem 0;
+    padding: 3.75rem 0;
     width: 1200px;
 }

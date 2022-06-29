@@ -3,10 +3,7 @@ import Image from 'next/image';
 
 import headerStyles from './Header.module.scss';
 
-import Nav from './Nav';
-import Button from '../../Button';
-
-import Logo from '../../../assets/images/logo.svg';
+import Logo from '../../../assets/images/logo.png';
 
 const Header = () => {
     return (
@@ -17,17 +14,13 @@ const Header = () => {
                         <a>
                             <Image
                                 src={Logo}
-                                height='65'
-                                width='140'
+                                height='28'
+                                width='190'
                                 alt='Logo'
                             />
                         </a>
                     </Link>
                 </figure>
-                <Nav />
-                <Button style='primary-btn' link='https://whitelist.lazylamb.com/'>
-                    Join the Whitelist
-                </Button>
             </div>
         </header>
     );
