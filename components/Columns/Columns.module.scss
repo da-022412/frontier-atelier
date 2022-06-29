@@ -1,0 +1,28 @@
+.columns {
+    align-items: flex-start;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+
+    @media(max-width: 767px) {
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+}
+
+.column-content {
+    &:first-child {
+        width: 60%;
+    }
+
+    &:last-child {
+        width: 40%;
+    }
+
+    @media(max-width: 767px) {
+        &:first-child,
+        &:last-child {
+            width: 100%;
+        }
+    }
+}

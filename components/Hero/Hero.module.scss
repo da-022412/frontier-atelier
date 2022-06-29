@@ -1,0 +1,55 @@
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/assets/images/space-bg.webp') repeat top center/100%;
+}
+
+.hero {
+    @media(max-width: 767px) {
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)), url('/assets/images/lazy-lamb-red-purple.webp') no-repeat top center/cover;
+        margin: auto;
+        padding: 12.5rem 0 3.75rem;
+        text-align: center;
+    }
+}
+
+.hero-container {
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: -1.5% auto -10%;
+}
+
+.heading-container {
+    padding: 10% 1.75rem 0 0;
+    width: 50%;
+
+    @media(max-width:767px) {
+        width: 100%;
+    }
+}
+
+.hero-btns {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+
+    @media(max-width: 980px) {
+        flex-wrap: wrap;
+    }
+
+    @media(max-width:767px) {
+        justify-content: center;
+    }
+}
+
+.hero-img {
+    img {
+        border-radius: 50%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    @media(max-width:767px) {
+        display: none;
+    }
+}

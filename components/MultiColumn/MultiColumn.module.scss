@@ -1,0 +1,29 @@
+.columns-container {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 90%;
+    width: 1200px;
+}
+
+.columns {
+    align-items: flex-start;
+    display: flex;
+    gap: 1.125rem;
+    justify-content: space-between;
+
+    @media(max-width: 767px) {
+        flex-wrap: wrap;
+    }
+}
+
+.column-content {
+    width: 33.333%;
+
+    @media(max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.columns-banner {
+    margin-bottom: 1.75rem;
+}

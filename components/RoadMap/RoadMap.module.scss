@@ -1,0 +1,22 @@
+.roadmap-columns {
+    align-items: center;
+    display: flex;
+
+    div:first-child {
+        width: 40%;
+    }
+
+    div:last-child {
+        width: 60%;
+    }
+
+    @media(max-width: 767px) {
+        flex-wrap: wrap;
+        gap: 1.875rem;
+
+        div:first-child,
+        div:last-child {
+            width: 100%;
+        }
+    }
+}

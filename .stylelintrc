@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "stylelint-config-sass-guidelines"
+    ],
+    "rules": {
+        "indentation": 4,
+        "number-leading-zero": null,
+        "no-missing-end-of-source-newline": null,
+        "order/order": [
+            "custom-properties",
+            "declarations"
+        ]
+    }
+}
