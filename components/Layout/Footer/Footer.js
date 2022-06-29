@@ -1,23 +1,31 @@
-import Image from 'next/image';
-
 import footerStyles from './Footer.module.scss';
 
 import Container from '../../Container';
-import Form from './Form';
-import ContactInfo from './ContactInfo';
-
-import Logo from '../../../assets/images/metaspeed_white.webp';
+import Heading from '../../Heading';
+import BodyText from '../../BodyText';
 
 const Footer = () => {
     return (
         <footer className={footerStyles.footer}>
+            <div className={`${footerStyles['footer-container']}`}>
+                <Container>
+                    <div className={`${footerStyles['footer-message']}`}>
+                        <Heading style='heading-2' level='2'>
+                            Welcome to the{' '}
+                            <span style={{ color: 'var(--color-accent)' }}>
+                                curiosity sandbox
+                            </span>
+                        </Heading>
+                        <BodyText>312.508.7496</BodyText>
+                    </div>
+                </Container>
+            </div>
             <Container>
-                <div className={`${footerStyles['footer-container']}`}>
-                    <Form />
-                    <Image src={Logo} height={52} width={200} alt='Metaspeed' />
-                    <ContactInfo />
+                <div className={footerStyles.legal}>
+                    <BodyText>
+                        © 2022 Frontier Atelier. All Rights Reserved
+                    </BodyText>
                 </div>
-
             </Container>
         </footer>
     );

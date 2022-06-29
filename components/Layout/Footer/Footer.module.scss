@@ -1,24 +1,31 @@
 .footer {
-    background-color: #171717;
-    padding: 5rem 0;
-}
-
-.footer-container {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-between;
-
-    @media(max-width: 980px) {
-        flex-wrap: wrap;
-        gap: 3.75rem;
-        justify-content: center;
+    h2 {
+        font-weight: 300;
+        padding: 0;
     }
 }
 
+.footer-container {
+    background-color: #171717;
+}
 
-.footer-container2 {
-    display: flex;
+.footer-message {
     align-items: center;
-    justify-content: center;
-    color: #c4c4c4;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+    width: 100%;
+
+    text {
+        color: var(--color-accent);
+        display: block;
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.legal {
+    padding: 1.5rem 0;
+    text-align: center;
 }
