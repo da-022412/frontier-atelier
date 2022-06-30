@@ -1,32 +1,24 @@
-import Image from 'next/image';
-
-import Container from '../Container';
-import Heading from '../Heading';
-import BodyText from '../BodyText';
-
 import infoStyles from './Info.module.scss';
 
-import imgOne from '../../assets/images/lazy-lambo-trippy.webp';
-import imgTwo from '../../assets/images/lazy-lamb-purple-shades.webp';
-import imgThree from '../../assets/images/lazy-lambs-gold.webp';
-import imgFour from '../../assets/images/lazy-lamb-lambo-green.webp';
+import Container from '../Container';
+import ContainerTight from '../ContainerTight';
+import Heading from '../Heading';
+import BodyText from '../BodyText';
+import InfoBlurbs from './InfoBlurbs';
 
-const images = [
+import ImgOne from '../../assets/images/frontier-atelier-tower.webp';
+import ImgTwo from '../../assets/images/frontier-atelier-guitar.webp';
+
+let CONTENT = [
     {
-        id: 0,
-        img: imgOne,
+        img: ImgOne,
+        title: 'Brand Collaborations and Bespoke Customized Service',
+        copy: 'Frontier Atelier clients can collaborate with designers from the wold’s leading Design Houses and most desirable brands to create unique, one-of-a-kind objects.',
     },
     {
-        id: 1,
-        img: imgTwo,
-    },
-    {
-        id: 2,
-        img: imgThree,
-    },
-    {
-        id: 3,
-        img: imgFour,
+        img: ImgTwo,
+        title: 'Client Imagination & Innovation Engine',
+        copy: 'Frontier Atelier’s in-house design team allows for our clients to imagine new product ideas that both celebrate the heritage of luxury and the exciting possibilities of tomorrow, driven by technology and futurism.',
     },
 ];
 
@@ -34,37 +26,26 @@ const Information = () => {
     return (
         <Container>
             <div className={`${infoStyles['info-container']}`}>
-                <div className={`${infoStyles['info-imgs']}`}>
-                    {images.map((img) => (
-                        <Image
-                            src={img.img}
-                            height={250}
-                            width={250}
-                            alt='Lazy Lambs NFT'
-                            key={img.id}
-                        />
-                    ))}
-                </div>
-                <div className={`${infoStyles['info-content']}`}>
-                    <Heading style='heading-3' level='3'>
-                        Lazy Lamb is the first luxury and exotic car club where
-                        membership is purchased through an NFT and owned by the
-                        token-holders.
-                    </Heading>
-                    <BodyText>
-                        The project offers 10,000 limited non-fungible
-                        membership tokens with proof of ownership stored on the
-                        Ethereum blockchain.
-                    </BodyText>
-
-                    <BodyText>
-                        Token ownership grants access to our private car club,
-                        with exclusive member-only benefits to experience the
-                        high-end automotive lifestyle, including the chance to
-                        win four real-life supercars!
-                    </BodyText>
-
-                </div>
+                <ContainerTight>
+                    <div className={`${infoStyles['info-content']}`}>
+                        <Heading style='heading-3' level='3'>
+                            Your unique vision.{' '}
+                            <span style={{ color: 'var(--color-accent)' }}>
+                                Brought to life.
+                            </span>
+                        </Heading>
+                        <BodyText>
+                            Frontier Atelier’s Custom Works and Dream Works
+                            services allow our clients to create and imagine new
+                            product ideas in-house with our Client Imagination &
+                            Innovation Engine team and build entirely new and
+                            bespoke objects, products and experiences, or we can
+                            originate and oversee collaborations with leading
+                            Design Houses and Brands.
+                        </BodyText>
+                    </div>
+                </ContainerTight>
+                <InfoBlurbs items={CONTENT} />
             </div>
         </Container>
     );

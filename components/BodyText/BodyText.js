@@ -2,10 +2,9 @@ import textStyles from './BodyText.module.scss';
 
 const BodyText = ({ children }) => {
     return (
-        <text
+        <div
             className={`${textStyles['body-text']}`}
-            dangerouslySetInnerHTML={{ __html: children }}
-        ></text>
+            dangerouslySetInnerHTML={{ __html: children }}></div>
     );
 };
 

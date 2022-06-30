@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <Container>
                 <div className={footerStyles.legal}>
-                    <BodyText>
+                    <BodyText style={{ color: 'var(--color-accent' }}>
                         © 2022 Frontier Atelier. All Rights Reserved
                     </BodyText>
                 </div>

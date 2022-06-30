@@ -2,10 +2,11 @@ import Image from 'next/image';
 
 import Hero from '../components/Hero';
 import About from '../components/About';
+import Information from '../components/Information';
 
 import homeStyles from '../components/Hero/Hero.module.scss';
 
-import Yatch from '../assets/images/frontier-atelier-yacht.jpg';
+import Yatch from '../assets/images/frontier-atelier-yacht.webp';
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <Hero />
             <About />
             <Image src={Yatch} />
+            <Information />
         </main>
     );
 }
