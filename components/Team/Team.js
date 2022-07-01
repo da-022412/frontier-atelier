@@ -1,123 +1,92 @@
-import Image from 'next/image';
-
 import teamStyles from './Team.module.scss';
 
+import TeamMembers from './TeamMembers';
+
 import Container from '../Container';
+import ContainerTight from '../ContainerTight';
 import Heading from '../Heading';
 import BodyText from '../BodyText';
 
-import Grey from '../../assets/images/grey.webp';
-import Jeb from '../../assets/images/Jeb.webp';
-import SeanC from '../../assets/images/seanclayton.webp';
-import Electron from '../../assets/images/Electronshaper.webp';
-import Lenny from '../../assets/images/Lenny.webp';
-import YoungHero from '../../assets/images/logo_younghero.webp';
-import Atlas from '../../assets/images/logo_atlas.webp';
-import Myosin from '../../assets/images/myosin-logo.webp';
-import LamboBroward2 from '../../assets/images/lambobroward2.webp';
+import JonC from '../../assets/images/jon-cropper.webp';
+import AndreasT from '../../assets/images/andreas-thurner.webp';
+import MichaelB from '../../assets/images/michael-beneville.webp';
+import RichH from '../../assets/images/rich-hallam.webp';
+import DianeW from '../../assets/images/diane-warshay.webp';
+import CraigC from '../../assets/images/craig-currie.webp';
+import BenjaminH from '../../assets/images/benjamin-heneka.webp';
+import JonB from '../../assets/images/jon-bond.webp';
+
+const CONTENT = [
+    {
+        img: JonC,
+        title: 'Jon Cropper',
+        copy: 'Former Head of Partnerships Aston Martin',
+    },
+    {
+        img: AndreasT,
+        title: 'Andreas Thurner',
+        copy: 'Former Head of Bespoke Design Services Rolls Royce',
+    },
+    {
+        img: MichaelB,
+        title: 'Michael Beneville',
+        copy: 'Founder Beneville Studios Billionaire Custom Publisher',
+    },
+    {
+        img: RichH,
+        title: 'Rich Hallam',
+        copy: 'Personal Concierge Saudi Royal Family',
+    },
+    {
+        img: DianeW,
+        title: 'Diane Warshay',
+        copy: 'Former Co-head of National Bank of Canada’s Private Equity Group',
+    },
+    {
+        img: CraigC,
+        title: 'Craig Currie',
+        copy: 'Founder SCPS Unlimited Bespoke Object Production',
+    },
+    {
+        img: BenjaminH,
+        title: 'Benjamin Heneka',
+        copy: 'Global Luxury Specialist',
+    },
+    {
+        img: JonB,
+        title: 'Jon Bond',
+        copy: 'Luxury Marketing Guru',
+    },
+];
 
 const Team = () => {
     return (
-        <Container>
-            <Heading style='heading-2' level='2'>
-                The Team
-            </Heading>
-            <div className={`${teamStyles['team-columns']}`}>
-                {team.map(({ title, text, img }, index) => (
-                    <div className={`${teamStyles['team-item']}`} key={index}>
-                        <Image
-                            src={img}
-                            width={200}
-                            height={200}
-                            className={`${teamStyles['team-img']}`}
-                            alt='Profile Pic'
-                        />
-                        <Heading style='heading-3' level='3'>
-                            {title}
-                        </Heading>
-                        <BodyText>{text}</BodyText>
-                    </div>
-                ))}
-            </div>
-            <div className={`${teamStyles['brand-columns']}`}>
-                {brands.map(({ title, img, height, width }, index) => (
-                    <div
-                        className={`${teamStyles['brand-item-container']}`}
-                        key={index}
-                    >
-                        <div className={`${teamStyles['brand-item']}`}>
-                            <Image
-                                src={img}
-                                width={width}
-                                height={height}
-                                className={`${teamStyles['brand-img']}`}
-                                alt='Profile Pic'
-                            />
-                            <Heading style='heading-6' level='6'>
-                                {title}
-                            </Heading>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </Container>
+        <div className={`${teamStyles['team-container']}`}>
+            <Container>
+                <ContainerTight>
+                    <Heading style='heading-3' level='3'>
+                        You could call us your{' '}
+                        <span style={{ color: 'var(--color-accent)' }}>
+                            dream team.
+                        </span>
+                    </Heading>
+                    <BodyText>
+                        Frontier Atelier patrons can collaborate directly with
+                        our in-house, highly skilled and globally recognized
+                        team of craftsmen, designers, creative technologists,
+                        coders, engineers and fabricators, legendary filmmakers
+                        and musicians, as well as leading Design Houses and
+                        Brands, to develop the most innovative products and
+                        experiences. Our renown team will solve the most complex
+                        design challenges, build unique artisan objects,
+                        creating breathtaking experiences and technologically
+                        advanced bespoke items that would otherwise never exist.
+                    </BodyText>
+                </ContainerTight>
+            </Container>
+            <TeamMembers items={CONTENT} />
+        </div>
     );
 };
-
-const team = [
-    {
-        title: 'Grey',
-        text: 'The Dreamer',
-        img: Grey,
-    },
-    {
-        title: 'Sean C.',
-        text: 'The Shaman',
-        img: SeanC,
-    },
-    {
-        title: 'Electronshaper',
-        text: 'The Weaver',
-        img: Electron,
-    },
-    {
-        title: 'JEB',
-        text: 'The Thinkerer',
-        img: Jeb,
-    },
-    {
-        title: 'Lenny G.',
-        text: 'The Pet Lamb',
-        img: Lenny,
-    },
-];
-
-const brands = [
-    {
-        img: YoungHero,
-        title: 'Artwork by YoungHero',
-        height: 21,
-        width: 304,
-    },
-    {
-        img: Atlas,
-        title: 'Smart-Contract by Atlas',
-        height: 44,
-        width: 261,
-    },
-    {
-        img: Myosin,
-        title: 'Utility Strategy + Website by Myosin',
-        height: 59,
-        width: 216,
-    },
-    {
-        img: LamboBroward2,
-        title: 'Official Lamborghini Dealer',
-        height: 99,
-        width: 220,
-    },
-
-];
 
 export default Team;

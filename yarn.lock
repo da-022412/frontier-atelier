@@ -3643,10 +3643,10 @@
     "picocolors" "^1.0.0"
     "stable" "^0.1.8"
 
-"swiper@^8.0.7":
-  "integrity" "sha512-GHjDfxSZdupfU7LrSVOpaNaT7R1D2zxopPGBFz1UOXOtsYvVJLg0k6NvkTAD7qn0ASl5pTti82qoYwvYvIkg4g=="
-  "resolved" "https://registry.npmjs.org/swiper/-/swiper-8.0.7.tgz"
-  "version" "8.0.7"
+"swiper@^8.2.6":
+  "integrity" "sha512-qo0E9GpcZpJer+vYXRd3CANDfFZTmUeyeIjmyi7fwuc5ozhAs1MCLgMSpZn393ZBgK7VIXA40YnQcAyJX3kjzw=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-8.2.6.tgz"
+  "version" "8.2.6"
   dependencies:
     "dom7" "^4.0.4"
     "ssr-window" "^4.0.2"
