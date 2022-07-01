@@ -1,0 +1,18 @@
+.benefits-container {
+    padding: 7.5rem 0;
+    text-align: center;
+}
+
+.benefits-blurbs {
+    align-items: flex-start;
+    display: flex;
+    gap: .625rem;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+}
+
+.benefits-blurb {
+    border: 1px solid var(--color-accent);
+    padding: 1rem 1.25rem;
+    width: 20%;
+}
