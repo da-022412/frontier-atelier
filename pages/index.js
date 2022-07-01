@@ -7,16 +7,15 @@ import Benefits from '../components/Benefits';
 import Design from '../components/Design';
 import Team from '../components/Team';
 
-import homeStyles from '../components/Hero/Hero.module.scss';
-
 import Yatch from '../assets/images/frontier-atelier-yacht.webp';
 import Sneakers from '../assets/images/frontier-atelier-sneakers.webp';
 import Satellite from '../assets/images/frontier-atelier-satellite.webp';
 import Fashion from '../assets/images/frontier-atelier-fashion.webp';
+import Liquor from '../assets/images/frontier-atelier-liquor.webp';
 
 export default function Home() {
     return (
-        <main className={homeStyles.main}>
+        <main>
             <Hero />
             <About />
             <Image src={Yatch} />
@@ -27,6 +26,7 @@ export default function Home() {
             <Design />
             <Image src={Fashion} />
             <Team />
+            <Image src={Liquor} />
         </main>
     );
 }
