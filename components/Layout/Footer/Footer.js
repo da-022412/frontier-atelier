@@ -6,11 +6,11 @@ import BodyText from '../../BodyText';
 
 const Footer = () => {
     return (
-        <footer className={footerStyles.footer}>
+        <footer>
             <div className={`${footerStyles['footer-container']}`}>
                 <Container>
                     <div className={`${footerStyles['footer-message']}`}>
-                        <Heading style='heading-2' level='2'>
+                        <Heading style='heading-4' level='4'>
                             Welcome to the{' '}
                             <span style={{ color: 'var(--color-accent)' }}>
                                 curiosity sandbox

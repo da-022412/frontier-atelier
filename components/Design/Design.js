@@ -17,7 +17,9 @@ const Design = () => {
                         Design School 101
                     </span>
                 </Heading>
-                <Image src={Infographic} />
+                <figure className={`${designStyles['design-img']}`}>
+                    <Image src={Infographic} />
+                </figure>
             </div>
         </Container>
     );
