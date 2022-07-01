@@ -6,6 +6,7 @@ import Information from '../components/Information';
 import Benefits from '../components/Benefits';
 import Design from '../components/Design';
 import Team from '../components/Team';
+import Makers from '../components/Makers';
 
 import Yatch from '../assets/images/frontier-atelier-yacht.webp';
 import Sneakers from '../assets/images/frontier-atelier-sneakers.webp';
@@ -27,6 +28,7 @@ export default function Home() {
             <Image src={Fashion} />
             <Team />
             <Image src={Liquor} />
+            <Makers />
         </main>
     );
 }
