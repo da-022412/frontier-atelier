@@ -4,20 +4,12 @@ const nextConfig = {
 };
 
 module.exports = {
-    env: {
-        NEXT_PUBLIC_FORM: 'myyojjde',
-    },
-
     webpack(config) {
         config.module.rules.push({
-            test: /\.svg$/,
-            issuer: {
-                test: /\.(js|ts)x?$/,
-            },
-
+            test: /\.svg$/i,
+            issuer: { and: [/\.(js|ts|md)x?$/] },
             use: ['@svgr/webpack'],
         });
-
         return config;
     },
 };
