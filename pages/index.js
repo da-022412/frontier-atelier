@@ -13,6 +13,7 @@ import Sneakers from '../assets/images/frontier-atelier-sneakers.webp';
 import Satellite from '../assets/images/frontier-atelier-satellite.webp';
 import Fashion from '../assets/images/frontier-atelier-fashion.webp';
 import Liquor from '../assets/images/frontier-atelier-liquor.webp';
+import Vehicle from '../assets/images/frontier-atelier-vehicle.webp';
 
 export default function Home() {
     return (
@@ -29,6 +30,7 @@ export default function Home() {
             <Team />
             <Image src={Liquor} />
             <Makers />
+            <Image src={Vehicle} />
         </main>
     );
 }

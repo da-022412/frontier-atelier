@@ -21,7 +21,6 @@ const TeamMembers = ({ items }) => {
                         src={img}
                         width={200}
                         height={200}
-                        className={`${teamStyles['team-img']}`}
                         alt='Profile Pic'
                     />
                     <Heading style='heading-5' level='5'>

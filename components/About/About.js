@@ -16,7 +16,7 @@ const About = () => {
                         Atelier.
                     </span>
                 </Heading>
-                <div className={`${aboutStyles['about-text']}`}>
+                <aside>
                     <BodyText>
                         Frontier Atelier is a curiosity sandbox, and the only
                         bespoke Design Studio in the world where discerning
@@ -34,7 +34,7 @@ const About = () => {
                         and creators as well as leading Design Houses and
                         Brands.
                     </BodyText>
-                </div>
+                </aside>
             </div>
         </ContainerTight>
     );
