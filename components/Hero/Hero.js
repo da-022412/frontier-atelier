@@ -17,14 +17,9 @@ const Hero = () => {
                     </Heading>
                 </Container>
             </div>
-            <div classname={`${heroStyles['video-container']}`}>
-                <video autoPlay loop muted>
-                    <source
-                        src='/assets/videos/FA_hero-web.mp4'
-                        type='video/mp4'
-                    />
-                </video>
-            </div>
+            <video autoPlay loop muted className={heroStyles.video}>
+                <source src='/assets/videos/FA_hero-web.mp4' type='video/mp4' />
+            </video>
         </div>
     );
 };

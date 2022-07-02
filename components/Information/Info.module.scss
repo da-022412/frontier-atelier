@@ -1,5 +1,9 @@
 .info-container {
     padding: 7.5rem 0;
+
+    @media(max-width:767px) {
+        padding: 3.75rem 0;
+    }
 }
 
 .info-content {
@@ -9,12 +13,20 @@
 .info-blurbs {
     display: flex;
     gap: .75rem;
+
+    @media(max-width:767px) {
+        flex-wrap: wrap;
+    }
 }
 
 .info-blurb {
     border: 1px solid var(--color-accent);
     padding: 1.5rem;
     width: 50%;
+
+    @media(max-width:767px) {
+        width: 100%;
+    }
 }
 
 .info-img {

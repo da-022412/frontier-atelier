@@ -1,4 +1,8 @@
 .callout-container {
     padding: 7.5rem 0;
     text-align: center;
+
+    @media(max-width:767px) {
+        padding: 3.75rem 0;
+    }
 }

@@ -11,4 +11,15 @@
     text-align: center;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    @media(max-width:767px) {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+.video {
+    @media(max-width:767px) {
+        max-height: 100vh;
+    }
 }
