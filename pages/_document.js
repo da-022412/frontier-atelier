@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta name='description' content='Lazy Lamb' />
+                    <meta name='description' content='Frontier Atelier' />
                     <link
                         rel='apple-touch-icon'
                         sizes='180x180'
