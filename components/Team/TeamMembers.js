@@ -10,9 +10,21 @@ import BodyText from '../BodyText';
 const TeamMembers = ({ items }) => {
     return (
         <Swiper
-            slidesPerView={6.5}
-            spaceBetween={20}
-            className={`${teamStyles['team-members']}`}>
+            className={`${teamStyles['team-members']}`}
+            breakpoints={{
+                300: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                981: {
+                    slidesPerView: 6.5,
+                    spaceBetween: 20,
+                },
+            }}>
             {items.map(({ img, title, copy }, index) => (
                 <SwiperSlide
                     className={`${teamStyles['team-item']}`}
