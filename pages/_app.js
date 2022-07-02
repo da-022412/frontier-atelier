@@ -19,6 +19,12 @@ function MyApp({ Component, pageProps }) {
                     --color-accent: #d39f64;
                 }
 
+                html,
+                body {
+                    min-height: 100vh;
+                    overflow-x: hidden;
+                }
+
                 a {
                     text-decoration: none;
                 }
