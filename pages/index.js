@@ -54,14 +54,10 @@ export default function Home() {
             <Image src={Yatch} />
             <Information />
             <Image src={Sneakers} />
-            {!isBreakpoint ? (
-                <>
-                    <Benefits />
-                    <Image src={Satellite} />
-                    <Design />
-                    <Image src={Fashion} />
-                </>
-            ) : null}
+            <Benefits />
+            <Image src={Satellite} />
+            <Design />
+            <Image src={Fashion} />
             <Team />
             <Image src={Liquor} />
             <Makers />
