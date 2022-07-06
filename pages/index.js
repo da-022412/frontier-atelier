@@ -21,17 +21,17 @@ export default function Home() {
         <main>
             <Hero />
             <About />
-            <Image src={Yatch} />
+            <Image src={Yatch} alt='Banner' />
             <Information />
-            <Image src={Sneakers} />
+            <Image src={Sneakers} alt='Banner' />
             <Benefits />
-            <Image src={Satellite} />
+            <Image src={Satellite} alt='Banner' />
             <Design />
-            <Image src={Fashion} />
+            <Image src={Fashion} alt='Banner' />
             <Team />
-            <Image src={Liquor} />
+            <Image src={Liquor} alt='Banner' />
             <Makers />
-            <Image src={Vehicle} />
+            <Image src={Vehicle} alt='Banner' />
             <CallOut />
         </main>
     );

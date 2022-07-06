@@ -27,14 +27,15 @@ const CallOut = () => {
                 </Heading>
                 <BodyText>
                     Our team is at your service to imagine and fabricate unique
-                    products and experiences in collaboration with the world’s
-                    leading Design Houses and Brands.
+                    products and experiences in collaboration with the
+                    world&apos;s leading Design Houses and Brands.
                 </BodyText>
                 <a
-                    className={callOutStyles['btn-container']}
+                    className={`${callOutStyles['btn-container']}`}
                     href='tel:3125087496'>
                     <div className={callOutStyles.btn}>
-                        <Image src={Phone} height={24} width={24} /> Let's Talk
+                        <Image src={Phone} height={24} width={24} alt='Phone' />{' '}
+                        Let&apos;s Talk
                     </div>
                 </a>
             </motion.div>

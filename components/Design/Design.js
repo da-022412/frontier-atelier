@@ -18,7 +18,7 @@ const Design = () => {
                     </span>
                 </Heading>
                 <figure className={`${designStyles['design-img']}`}>
-                    <Image src={Infographic} />
+                    <Image src={Infographic} alt='Infographic' />
                 </figure>
             </div>
         </Container>
