@@ -11,7 +11,7 @@ const Blurb = ({ img, title, copy }) => {
             <figure className={`${blurbStyles['blurb-img']}`}>
                 <Image src={img} width={200} height={200} alt='Profile Pic' />
             </figure>
-            <Heading style='heading-5' level='5'>
+            <Heading style='heading-4' level='4'>
                 {title}
             </Heading>
             <BodyText small>{copy}</BodyText>
