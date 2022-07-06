@@ -21,32 +21,44 @@ const Hero = () => {
 
     return (
         <div className={heroStyles.hero}>
-            {!time ? (
-                <div className={`${heroStyles['heading-container']}`}>
-                    <Container>
-                        <Heading style='heading-2' level='2'>
-                            Welcome to the{' '}
-                            <span style={{ color: 'var(--color-accent)' }}>
-                                curiosity sandbox
-                            </span>
-                        </Heading>
-                    </Container>
-                </div>
+            {time ? (
+                <AnimatePresence>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className={`${heroStyles['heading-container']}`}>
+                        <Container>
+                            <Heading style='heading-2' level='2'>
+                                Welcome to the{' '}
+                                <span style={{ color: 'var(--color-accent)' }}>
+                                    curiosity sandbox
+                                </span>
+                            </Heading>
+                        </Container>
+                    </motion.div>
+                </AnimatePresence>
             ) : (
-                <div className={`${heroStyles['heading-container']}`}>
-                    <Container>
-                        <Heading style='heading-1' level='1'>
-                            <span style={{ color: 'var(--color-accent)' }}>
-                                Frontier Atelier
-                            </span>{' '}
-                            is a bespoke, private online luxury shopping
-                            platform enabling patrons to purchase one-of-one
-                            items and experiences curated by creators and
-                            artisans from the far reaches of this this beautiful
-                            world.
-                        </Heading>
-                    </Container>
-                </div>
+                <AnimatePresence>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className={`${heroStyles['heading-container']}`}>
+                        <Container>
+                            <Heading style='heading-1' level='1'>
+                                <span style={{ color: 'var(--color-accent)' }}>
+                                    Frontier Atelier
+                                </span>{' '}
+                                is a bespoke, private online luxury shopping
+                                platform enabling patrons to purchase one-of-one
+                                items and experiences curated by creators and
+                                artisans from the far reaches of this this
+                                beautiful world.
+                            </Heading>
+                        </Container>
+                    </motion.div>
+                </AnimatePresence>
             )}
             <video autoPlay loop muted className={heroStyles.video}>
                 <source src='/assets/videos/FA_hero-web.mp4' type='video/mp4' />
