@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import teamStyles from './Team.module.scss';
 
 import TeamMembers from './TeamMembers';
@@ -61,7 +63,12 @@ const CONTENT = [
 
 const Team = () => {
     return (
-        <div className={`${teamStyles['team-container']}`}>
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ delay: 0.25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className={`${teamStyles['team-container']}`}>
             <Container>
                 <ContainerTight>
                     <Heading style='heading-3' level='3'>
@@ -85,7 +92,7 @@ const Team = () => {
                 </ContainerTight>
             </Container>
             <TeamMembers items={CONTENT} />
-        </div>
+        </motion.div>
     );
 };
 
