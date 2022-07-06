@@ -1,8 +1,12 @@
+import Image from 'next/image';
+
 import callOutStyles from './CallOut.module.scss';
 
 import ContainerTight from '../ContainerTight';
 import Heading from '../Heading';
 import BodyText from '../BodyText';
+
+import Phone from '../../assets/images/bxs_phone.webp';
 
 const CallOut = () => {
     return (
@@ -19,6 +23,13 @@ const CallOut = () => {
                     products and experiences in collaboration with the world’s
                     leading Design Houses and Brands.
                 </BodyText>
+                <a
+                    className={callOutStyles['btn-container']}
+                    href='tel:3125087496'>
+                    <div className={callOutStyles.btn}>
+                        <Image src={Phone} height={24} width={24} /> Let's Talk
+                    </div>
+                </a>
             </div>
         </ContainerTight>
     );
