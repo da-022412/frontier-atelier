@@ -43,7 +43,6 @@ const Tabs = ({ items }) => {
     const [isActive, setIsActive] = useState(false);
     const [toShow, setToShow] = useState([]);
     const [next, setNext] = useState(4);
-    const [end, setEnd] = useState(false);
 
     const isBreakpoint = useMediaQuery(767);
 
