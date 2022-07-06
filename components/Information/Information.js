@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import infoStyles from './Info.module.scss';
 
 import Container from '../Container';
@@ -25,7 +27,12 @@ let CONTENT = [
 const Information = () => {
     return (
         <Container>
-            <div className={`${infoStyles['info-container']}`}>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                transition={{ delay: 0.5 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className={`${infoStyles['info-container']}`}>
                 <ContainerTight>
                     <div className={`${infoStyles['info-content']}`}>
                         <Heading style='heading-3' level='3'>
@@ -46,7 +53,7 @@ const Information = () => {
                     </div>
                 </ContainerTight>
                 <InfoBlurbs items={CONTENT} />
-            </div>
+            </motion.div>
         </Container>
     );
 };

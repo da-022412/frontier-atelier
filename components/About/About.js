@@ -12,7 +12,7 @@ const About = () => {
             <div className={`${aboutStyles['about-container']}`}>
                 <motion.aside
                     initial={{ opacity: 0, x: -50 }}
-                    transition={{ delay: 0.5 }}
+                    transition={{ delay: 0.25 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}>
                     <Heading style='heading-2' level='2'>
@@ -26,7 +26,7 @@ const About = () => {
                 </motion.aside>
                 <motion.aside
                     initial={{ opacity: 0, y: 50 }}
-                    transition={{ delay: 0.5 }}
+                    transition={{ delay: 0.25 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}>
                     <BodyText>
