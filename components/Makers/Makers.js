@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import makersStyles from './Makers.module.scss';
 
 import Tabs from './Tabs';
@@ -162,7 +164,12 @@ const CONTENT = {
 
 const Makers = () => {
     return (
-        <section className={`${makersStyles['makers-section']}`}>
+        <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ delay: 0.25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className={`${makersStyles['makers-section']}`}>
             <ContainerTight>
                 <Heading style='heading-3' level='3'>
                     Meet the{' '}
@@ -176,7 +183,7 @@ const Makers = () => {
                 </BodyText>
             </ContainerTight>
             <Tabs items={CONTENT} />
-        </section>
+        </motion.section>
     );
 };
 
