@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import aboutStyles from './About.module.scss';
 
 import ContainerTight from '../ContainerTight';
@@ -8,15 +10,25 @@ const About = () => {
     return (
         <ContainerTight>
             <div className={`${aboutStyles['about-container']}`}>
-                <Heading style='heading-2' level='2'>
-                    This is <br />
-                    <span style={{ color: 'var(--color-accent)' }}>
-                        Frontier
-                        <br />
-                        Atelier.
-                    </span>
-                </Heading>
-                <aside>
+                <motion.aside
+                    initial={{ opacity: 0, x: -50 }}
+                    transition={{ delay: 0.5 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}>
+                    <Heading style='heading-2' level='2'>
+                        This is <br />
+                        <span style={{ color: 'var(--color-accent)' }}>
+                            Frontier
+                            <br />
+                            Atelier.
+                        </span>
+                    </Heading>
+                </motion.aside>
+                <motion.aside
+                    initial={{ opacity: 0, y: 50 }}
+                    transition={{ delay: 0.5 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}>
                     <BodyText>
                         Frontier Atelier is a curiosity sandbox, and the only
                         bespoke Design Studio in the world where discerning
@@ -34,7 +46,7 @@ const About = () => {
                         and creators as well as leading Design Houses and
                         Brands.
                     </BodyText>
-                </aside>
+                </motion.aside>
             </div>
         </ContainerTight>
     );
