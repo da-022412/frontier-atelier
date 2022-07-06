@@ -21,7 +21,7 @@ const Hero = () => {
 
     return (
         <div className={heroStyles.hero}>
-            {time ? (
+            {!time ? (
                 <AnimatePresence>
                     <motion.div
                         initial={{ opacity: 0 }}
