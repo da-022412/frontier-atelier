@@ -29,14 +29,7 @@ import imageTwenty from '../../assets/images/fabritzio-buonamassa.webp';
 import imageTwentyOne from '../../assets/images/kehinde-wiley.webp';
 
 const CONTENT = {
-    tabs: [
-        'All',
-        'Creative',
-        'Fashion',
-        'Technology',
-        'Architecture',
-        'Experiences',
-    ],
+    tabs: ['All', 'Creative', 'Fashion', 'Architecture', 'Experiences'],
     items: [
         {
             img: imageOne,
