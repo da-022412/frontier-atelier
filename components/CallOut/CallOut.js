@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import Image from 'next/image';
 
 import callOutStyles from './CallOut.module.scss';
@@ -11,7 +13,12 @@ import Phone from '../../assets/images/bxs_phone.webp';
 const CallOut = () => {
     return (
         <ContainerTight>
-            <div className={`${callOutStyles['callout-container']}`}>
+            <motion.div
+                initial={{ opacity: 0 }}
+                transition={{ delay: 0.25 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className={`${callOutStyles['callout-container']}`}>
                 <Heading style='heading-3' level='3'>
                     Ready to{' '}
                     <span style={{ color: 'var(--color-accent)' }}>
@@ -30,7 +37,7 @@ const CallOut = () => {
                         <Image src={Phone} height={24} width={24} /> Let's Talk
                     </div>
                 </a>
-            </div>
+            </motion.div>
         </ContainerTight>
     );
 };
