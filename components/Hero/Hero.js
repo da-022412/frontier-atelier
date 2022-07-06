@@ -21,9 +21,10 @@ const Hero = () => {
 
     return (
         <div className={heroStyles.hero}>
-            {!time ? (
-                <AnimatePresence>
+            <AnimatePresence>
+                {!time ? (
                     <motion.div
+                        key='first'
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -37,13 +38,13 @@ const Hero = () => {
                             </Heading>
                         </Container>
                     </motion.div>
-                </AnimatePresence>
-            ) : (
-                <AnimatePresence>
+                ) : (
                     <motion.div
+                        key='second'
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
+                        transition={{ delay: 0.25 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
                         className={`${heroStyles['heading-container']}`}>
                         <Container>
                             <Heading style='heading-1' level='1'>
@@ -58,8 +59,8 @@ const Hero = () => {
                             </Heading>
                         </Container>
                     </motion.div>
-                </AnimatePresence>
-            )}
+                )}
+            </AnimatePresence>
             <video autoPlay loop muted className={heroStyles.video}>
                 <source src='/assets/videos/FA_hero-web.mp4' type='video/mp4' />
             </video>
