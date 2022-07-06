@@ -19,7 +19,22 @@
 }
 
 .video {
+    max-height: 100vh;
+    width: 100%;
+
     @media(max-width:767px) {
-        max-height: 100vh;
+        width: auto;
     }
+}
+
+.scroll {
+    align-items: center;
+    bottom: 24px;
+    color: #626262;
+    display: flex;
+    flex-direction: column;
+    font-family: CabinetGroteskRegular, sans-serif;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    position: absolute;
 }

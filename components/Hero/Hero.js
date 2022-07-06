@@ -1,8 +1,12 @@
+import Image from 'next/image';
+
 import Heading from '../Heading';
 
 import heroStyles from './Hero.module.scss';
 
 import Container from '../Container';
+
+import arrowDown from '../../assets/images/arrow-down.webp';
 
 const Hero = () => {
     return (
@@ -20,6 +24,15 @@ const Hero = () => {
             <video autoPlay loop muted className={heroStyles.video}>
                 <source src='/assets/videos/FA_hero-web.mp4' type='video/mp4' />
             </video>
+            <div className={heroStyles.scroll}>
+                EXPLORE
+                <Image
+                    src={arrowDown}
+                    height={28}
+                    width={28}
+                    alt='Arrow Down'
+                />
+            </div>
         </div>
     );
 };
