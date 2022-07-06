@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import benefitsStyles from './Benefits.module.scss';
 
 import BenefitsBlurbs from './BenefitsBlurbs';
@@ -31,7 +33,12 @@ let CONTENT = [
 const Benefits = () => {
     return (
         <Container>
-            <div className={`${benefitsStyles['benefits-container']}`}>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                transition={{ delay: 0.5 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className={`${benefitsStyles['benefits-container']}`}>
                 <Heading style='heading-3' level='3'>
                     Driven by our{' '}
                     <span style={{ color: 'var(--color-accent' }}>
@@ -39,7 +46,7 @@ const Benefits = () => {
                     </span>
                 </Heading>
                 <BenefitsBlurbs items={CONTENT} />
-            </div>
+            </motion.div>
         </Container>
     );
 };
