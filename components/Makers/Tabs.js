@@ -41,8 +41,6 @@ const Tabs = ({ items }) => {
 
     const isBreakpoint = useMediaQuery(767);
 
-    console.log(active);
-
     return (
         <div className={tabsStyles.tabs}>
             {isBreakpoint ? (
