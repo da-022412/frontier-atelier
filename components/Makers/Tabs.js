@@ -43,6 +43,7 @@ const Tabs = ({ items }) => {
     const [isActive, setIsActive] = useState(false);
     const [toShow, setToShow] = useState([]);
     const [next, setNext] = useState(4);
+    const [end, setEnd] = useState(false);
 
     const isBreakpoint = useMediaQuery(767);
 
@@ -60,8 +61,6 @@ const Tabs = ({ items }) => {
         checkItems(next, next + perPage);
         setNext(next + perPage);
     };
-
-    console.log(toShow);
 
     return (
         <div className={tabsStyles.tabs}>
@@ -120,25 +119,54 @@ const Tabs = ({ items }) => {
                     ))}
                 </div>
             )}
-            <div className={tabsStyles.tab}>
-                {items.items.map(({ img, title, copy, tab }, index) =>
-                    active === tab ? (
-                        <Blurb
-                            img={img}
-                            title={title}
-                            copy={copy}
-                            key={index}
-                        />
-                    ) : active === 'All' ? (
-                        <Blurb
-                            img={img}
-                            title={title}
-                            copy={copy}
-                            key={index}
-                        />
-                    ) : null
-                )}
-            </div>
+            {isBreakpoint ? (
+                <>
+                    <div className={tabsStyles.tab}>
+                        {toShow.map(({ img, title, copy, tab }, index) =>
+                            active === tab ? (
+                                <Blurb
+                                    img={img}
+                                    title={title}
+                                    copy={copy}
+                                    key={index}
+                                />
+                            ) : active === 'All' ? (
+                                <Blurb
+                                    img={img}
+                                    title={title}
+                                    copy={copy}
+                                    key={index}
+                                />
+                            ) : null
+                        )}
+                    </div>
+                    <div
+                        className={tabsStyles['btn-container']}
+                        onClick={showMore}>
+                        <div className={tabsStyles.btn}>Load More</div>
+                    </div>
+                </>
+            ) : (
+                <div className={tabsStyles.tab}>
+                    {items.items.map(({ img, title, copy, tab }, index) =>
+                        active === tab ? (
+                            <Blurb
+                                img={img}
+                                title={title}
+                                copy={copy}
+                                key={index}
+                            />
+                        ) : active === 'All' ? (
+                            <Blurb
+                                img={img}
+                                title={title}
+                                copy={copy}
+                                key={index}
+                            />
+                        ) : null
+                    )}
+                </div>
+            )}
         </div>
     );
 };
