@@ -9,6 +9,9 @@ import Blurb from '../Blurb';
 import Less from '../../assets/images/caret-up-filled.webp';
 import More from '../../assets/images/caret-down-filled.webp';
 
+const perPage = 4;
+let blurbs = [];
+
 const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
 
@@ -38,8 +41,27 @@ const useMediaQuery = (width) => {
 const Tabs = ({ items }) => {
     const [active, setActive] = useState('All');
     const [isActive, setIsActive] = useState(false);
+    const [toShow, setToShow] = useState([]);
+    const [next, setNext] = useState(4);
 
     const isBreakpoint = useMediaQuery(767);
+
+    const checkItems = (start, end) => {
+        const sliced = items.items.slice(start, end);
+        blurbs = [...blurbs, ...sliced];
+        setToShow(blurbs);
+    };
+
+    useEffect(() => {
+        checkItems(0, perPage);
+    }, []);
+
+    const showMore = () => {
+        checkItems(next, next + perPage);
+        setNext(next + perPage);
+    };
+
+    console.log(toShow);
 
     return (
         <div className={tabsStyles.tabs}>
