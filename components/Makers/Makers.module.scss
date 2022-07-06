@@ -7,6 +7,10 @@
     }
 }
 
+.tabs {
+    padding: 2.5rem;
+}
+
 .tabs-titles {
     align-items: center;
     color: #fff;
@@ -36,6 +40,19 @@
 
 .active {
     color: var(--color-accent);
+    position: relative;
+
+    &::after {
+        background-color: var(--color-accent);
+        bottom: -25%;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1080;
+    }
 }
 
 .tab {

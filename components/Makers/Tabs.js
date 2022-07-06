@@ -169,7 +169,7 @@ const Tabs = () => {
     const [active, setActive] = useState('All');
 
     return (
-        <>
+        <section classname={tabsStyles.tabs}>
             <div className={`${tabsStyles['tabs-titles']}`}>
                 {CONTENT.tabs.map((tab) => (
                     <div
@@ -200,7 +200,7 @@ const Tabs = () => {
                     ) : null
                 )}
             </div>
-        </>
+        </section>
     );
 };
 

@@ -8,7 +8,9 @@ import BodyText from '../BodyText';
 const Blurb = ({ img, title, copy }) => {
     return (
         <div className={blurbStyles.blurb}>
-            <Image src={img} width={200} height={200} alt='Profile Pic' />
+            <figure className={`${blurbStyles['blurb-img']}`}>
+                <Image src={img} width={200} height={200} alt='Profile Pic' />
+            </figure>
             <Heading style='heading-5' level='5'>
                 {title}
             </Heading>
