@@ -41,15 +41,18 @@ const Information = () => {
                                 Brought to life.
                             </span>
                         </Heading>
-                        <BodyText>
+                        <p className={infoStyles.text}>
                             Frontier Atelier’s Custom Works and Dream Works
-                            services allow our clients to create and imagine new
-                            product ideas in-house with our Client Imagination &
-                            Innovation Engine team and build entirely new and
-                            bespoke objects, products and experiences, or we can
+                            services allow our clients to{' '}
+                            <span style={{ color: 'var(--color-accent)' }}>
+                                create and imagine new product ideas
+                            </span>{' '}
+                            in-house with our Client Imagination & Innovation
+                            Engine team and build entirely new and bespoke
+                            objects, products and experiences, or we can
                             originate and oversee collaborations with leading
                             Design Houses and Brands.
-                        </BodyText>
+                        </p>
                     </div>
                 </ContainerTight>
                 <InfoBlurbs items={CONTENT} />
