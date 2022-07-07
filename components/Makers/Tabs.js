@@ -128,6 +128,7 @@ const Tabs = ({ items }) => {
                                     title={title}
                                     copy={copy}
                                     key={index}
+                                    mobile
                                 />
                             ) : active === 'All' ? (
                                 <Blurb
@@ -135,6 +136,7 @@ const Tabs = ({ items }) => {
                                     title={title}
                                     copy={copy}
                                     key={index}
+                                    mobile
                                 />
                             ) : null
                         )}

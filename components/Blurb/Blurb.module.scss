@@ -1,7 +1,25 @@
 .blurb {
-    border: 1px solid #fff;
     min-height: 400px;
+}
+
+.blurb,
+.blurbMobile {
+    border: 1px solid #fff;
     padding: 1.25rem;
+}
+
+.blurbMobile {
+    @media(max-width:767px) {
+        display: flex;
+        gap: .75rem;
+        height: auto;
+        min-height: none !important;
+        text-align: left;
+    }
+}
+
+.blurb-mobile {
+    width: 100%;
 }
 
 .blurb-img {
