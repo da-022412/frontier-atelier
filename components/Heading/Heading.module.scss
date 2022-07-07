@@ -10,6 +10,10 @@
         font-size: 2rem;
         line-height: 1.25;
     }
+
+    @media(max-width:380px) {
+        font-size: 1.75rem;
+    }
 }
 
 .heading-2 {

@@ -12,6 +12,7 @@ const Blurb = ({ img, title, copy }) => {
             initial={{ opacity: 0 }}
             transition={{ delay: 0.25 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             className={blurbStyles.blurb}>
             <figure className={`${blurbStyles['blurb-img']}`}>
                 <Image src={img} width={200} height={200} alt='Profile Pic' />

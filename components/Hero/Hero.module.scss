@@ -7,15 +7,12 @@
 
 .heading-container {
     left: 50%;
+    margin: auto;
     position: absolute;
     text-align: center;
     top: 50%;
     transform: translate(-50%, -50%);
-
-    @media(max-width:767px) {
-        margin: auto;
-        width: 90%;
-    }
+    width: 90%;
 }
 
 .video {

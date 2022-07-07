@@ -29,14 +29,12 @@ const Hero = () => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         className={`${heroStyles['heading-container']}`}>
-                        <Container>
-                            <Heading style='heading-2' level='2'>
-                                Welcome to the{' '}
-                                <span style={{ color: 'var(--color-accent)' }}>
-                                    curiosity sandbox
-                                </span>
-                            </Heading>
-                        </Container>
+                        <Heading style='heading-2' level='2'>
+                            Welcome to the{' '}
+                            <span style={{ color: 'var(--color-accent)' }}>
+                                curiosity sandbox
+                            </span>
+                        </Heading>
                     </motion.div>
                 ) : (
                     <motion.div
@@ -61,7 +59,7 @@ const Hero = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-            <video autoPlay loop muted className={heroStyles.video}>
+            <video autoPlay loop muted className={heroStyles.video} playsInline>
                 <source src='/assets/videos/FA_hero-web.mp4' type='video/mp4' />
             </video>
             <div className={heroStyles.scroll}>
