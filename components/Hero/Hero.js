@@ -13,7 +13,7 @@ const Hero = () => {
     const [time, setTime] = useState(false);
 
     useEffect(() => {
-        let timer = setTimeout(() => setTime(true), 2000);
+        let timer = setTimeout(() => setTime(true), 3500);
         return () => {
             clearTimeout(timer);
         };
