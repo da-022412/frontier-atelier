@@ -9,29 +9,22 @@ import Team from '../components/Team';
 import Makers from '../components/Makers';
 import CallOut from '../components/CallOut';
 
-import Yatch from '../assets/images/frontier-atelier-yacht.webp';
-import Sneakers from '../assets/images/frontier-atelier-sneakers.webp';
-import Satellite from '../assets/images/frontier-atelier-satellite.webp';
-import Fashion from '../assets/images/frontier-atelier-fashion.webp';
-import Liquor from '../assets/images/frontier-atelier-liquor.webp';
-import Vehicle from '../assets/images/frontier-atelier-vehicle.webp';
-
 export default function Home() {
     return (
         <main>
             <Hero />
             <About />
-            <Image src={Yatch} alt='Banner' />
+            <div className='parallax yatch'></div>
             <Information />
-            <Image src={Sneakers} alt='Banner' />
+            <div className='parallax sneakers'></div>
             <Benefits />
-            <Image src={Satellite} alt='Banner' />
+            <div className='parallax satellite'></div>
             <Design />
-            <Image src={Fashion} alt='Banner' />
+            <div className='parallax fashion'></div>
             <Team />
-            <Image src={Liquor} alt='Banner' />
+            <div className='parallax liquor'></div>
             <Makers />
-            <Image src={Vehicle} alt='Banner' />
+            <div className='parallax vehicle'></div>
             <CallOut />
         </main>
     );
