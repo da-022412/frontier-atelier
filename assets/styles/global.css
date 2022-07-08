@@ -1,0 +1,42 @@
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 620px;
+}
+
+.yatch {
+    background-image: url('../images/frontier-atelier-yacht.webp');
+}
+
+.sneakers {
+    background-image: url('../images/frontier-atelier-sneakers.webp');
+}
+
+.satellite {
+    background-image: url('../images/frontier-atelier-satellite.webp');
+}
+
+.fashion {
+    background-image: url('../images/frontier-atelier-fashion.webp');
+}
+
+.liquor {
+    background-image: url('../images/frontier-atelier-liquor.webp');
+}
+
+.vehicle {
+    background-image: url('../images/frontier-atelier-vehicle.webp');
+}
+
+@media(max-width:767px) {
+    .parallax {
+        background-size: 1200px;
+        min-height: 390px;
+    }
+
+    .satellite {
+        background-position: left;
+    }
+}
