@@ -25,9 +25,9 @@ const Blurb = ({ img, title, copy, mobile }) => {
                         />
                     </figure>
                     <aside className={`${blurbStyles['blurb-mobile']}`}>
-                        <Heading style='heading-5' level='5'>
+                        <h5 className={`${blurbStyles['blurb-mobile-title']}`}>
                             {title}
-                        </Heading>
+                        </h5>
                         <BodyText small>{copy}</BodyText>
                     </aside>
                 </>

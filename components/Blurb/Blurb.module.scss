@@ -11,14 +11,29 @@
 
 .blurbMobile {
     @media(max-width:767px) {
+        align-items: center;
         display: flex;
         gap: .75rem;
         height: auto;
         min-height: none !important;
+        padding: .5rem;
         text-align: left;
     }
 }
 
 .blurb-mobile {
     width: 100%;
+}
+
+.blurb-mobile-title {
+    color: #fff;
+    font-family: CabinetGroteskRegular, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: .625rem;
+    
+    @media(max-width:767px) {
+        font-family: CabinetGroteskMedium, sans-serif;
+    }
 }

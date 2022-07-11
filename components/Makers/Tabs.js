@@ -68,9 +68,9 @@ const Tabs = ({ items }) => {
                     <div
                         className={`${tabsStyles['filter']}`}
                         onClick={() => setIsActive(!isActive)}>
-                        <Heading style='heading-5' level='5'>
+                        <h5 className={`${tabsStyles['to-filter']}`}>
                             FILTER BY
-                        </Heading>
+                        </h5>
                         {isActive ? (
                             <Image
                                 src={Less}
