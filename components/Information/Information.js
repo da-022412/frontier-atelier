@@ -5,7 +5,6 @@ import infoStyles from './Info.module.scss';
 import Container from '../Container';
 import ContainerTight from '../ContainerTight';
 import Heading from '../Heading';
-import BodyText from '../BodyText';
 import InfoBlurbs from './InfoBlurbs';
 
 import ImgOne from '../../assets/images/frontier-atelier-tower.webp';
