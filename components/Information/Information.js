@@ -7,8 +7,8 @@ import ContainerTight from '../ContainerTight';
 import Heading from '../Heading';
 import InfoBlurbs from './InfoBlurbs';
 
-import ImgOne from '../../assets/images/frontier-atelier-tower.webp';
-import ImgTwo from '../../assets/images/frontier-atelier-guitar.webp';
+import ImgOne from '../../assets/images/frontier-atelier-guitar.webp';
+import ImgTwo from '../../assets/images/frontier-atelier-tower.webp';
 
 let CONTENT = [
     {

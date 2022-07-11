@@ -32,6 +32,7 @@
 
     @media(max-width:767px) {
         flex-wrap: wrap;
+        font-size: 1.15rem !important;
     }
 }
 
@@ -54,5 +55,18 @@
         height: 100%;
         object-fit: cover;
         width: 100%;
+    }
+}
+
+.info-blurb-copy {
+    color: #fff;
+    display: block;
+    font-family: CabinetGroteskRegular, sans-serif;
+    font-size: 1.35rem;
+    padding-bottom: 2rem;
+
+    @media(max-width:767px) {
+        font-family: CabinetGroteskLight, sans-serif;
+        font-size: 1.15rem;
     }
 }
