@@ -13,7 +13,9 @@ const BenefitsBlurbs = ({ items }) => {
                     <Heading style='heading-4' level='4'>
                         {title}
                     </Heading>
-                    <BodyText>{copy}</BodyText>
+                    <p className={`${benefitsStyles['benefits-blurb-copy']}`}>
+                        {copy}
+                    </p>
                 </div>
             ))}
         </div>
