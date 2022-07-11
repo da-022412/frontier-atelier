@@ -28,6 +28,10 @@
         font-size: 4.5rem;
         padding-bottom: 1rem;
     }
+
+    @media(max-width:767px) {
+        padding-bottom: 0;
+    }
 }
 
 .heading-3 {
