@@ -1,10 +1,11 @@
 .blurb {
     min-height: 400px;
+    text-align: center;
 }
 
 .blurb,
 .blurbMobile {
-    border: 1px solid #fff;
+    border: 1px solid #626262;
     padding: 1.25rem;
 }
 
@@ -20,8 +21,4 @@
 
 .blurb-mobile {
     width: 100%;
-}
-
-.blurb-img {
-    padding-bottom: .75rem;
 }
