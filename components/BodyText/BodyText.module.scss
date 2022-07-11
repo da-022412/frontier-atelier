@@ -4,6 +4,10 @@
     font-family: CabinetGroteskRegular, sans-serif;
     font-size: 1.35rem;
     padding-bottom: 2rem;
+
+    @media(max-width:767px) {
+        font-family: CabinetGroteskLight, sans-serif;
+    }
 }
 
 .small {
