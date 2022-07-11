@@ -32,7 +32,8 @@
 
 @media(max-width:767px) {
     .parallax {
-        background-size: 1200px;
+        background-attachment: scroll;
+        background-size: 800px;
         min-height: 390px;
     }
 
