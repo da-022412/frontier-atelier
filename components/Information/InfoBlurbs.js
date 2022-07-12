@@ -3,7 +3,6 @@ import Image from 'next/image';
 import infoStyles from './Info.module.scss';
 
 import Heading from '../Heading';
-import BodyText from '../BodyText';
 
 const InfoBlurbs = ({ items }) => {
     return (

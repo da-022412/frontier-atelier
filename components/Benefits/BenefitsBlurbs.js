@@ -1,7 +1,6 @@
 import benefitsStyles from './Benefits.module.scss';
 
 import Heading from '../Heading';
-import BodyText from '../BodyText';
 
 const BenefitsBlurbs = ({ items }) => {
     return (
