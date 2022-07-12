@@ -42,8 +42,7 @@ const Hero = () => {
                         key='second'
                         initial={{ opacity: 0 }}
                         transition={{ delay: 1.5, default: { duration: 1 } }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: true }}
+                        animate={{ opacity: 1 }}
                         className={`${heroStyles['heading-container']}`}>
                         <Container>
                             <Heading style='heading-1' level='1'>
