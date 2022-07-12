@@ -13,9 +13,9 @@ const About = () => {
             <ContainerTight>
                 <div className={`${aboutStyles['about-container']}`}>
                     <motion.aside
-                        initial={{ opacity: 0, x: -50 }}
-                        transition={{ delay: 0.25 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0 }}
+                        transition={{ delay: 0.5, default: { duration: 1.5 } }}
+                        whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}>
                         <Heading style='heading-2' level='2'>
                             This is <br />
@@ -27,9 +27,9 @@ const About = () => {
                         </Heading>
                     </motion.aside>
                     <motion.aside
-                        initial={{ opacity: 0, y: 50 }}
-                        transition={{ delay: 0.25 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0 }}
+                        transition={{ delay: 0.5, default: { duration: 1.5 } }}
+                        whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}>
                         <BodyText>
                             Frontier Atelier is a curiosity sandbox, and the

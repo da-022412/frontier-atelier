@@ -64,9 +64,9 @@ const CONTENT = [
 const Team = () => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ delay: 0.25 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.5, default: { duration: 1.5 } }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             className={`${teamStyles['team-container']}`}>
             <Container>

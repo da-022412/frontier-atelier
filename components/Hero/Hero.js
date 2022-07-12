@@ -28,6 +28,7 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
+                        transition={{ delay: 0.5, default: { duration: 1 } }}
                         className={`${heroStyles['heading-container']}`}>
                         <Heading style='heading-2' level='2'>
                             Welcome to the{' '}
@@ -40,7 +41,7 @@ const Hero = () => {
                     <motion.div
                         key='second'
                         initial={{ opacity: 0 }}
-                        transition={{ delay: 0.25 }}
+                        transition={{ delay: 1.5, default: { duration: 1 } }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         className={`${heroStyles['heading-container']}`}>

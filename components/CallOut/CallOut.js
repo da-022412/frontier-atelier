@@ -17,7 +17,7 @@ const CallOut = () => {
             <ContainerTight>
                 <motion.div
                     initial={{ opacity: 0 }}
-                    transition={{ delay: 0.25 }}
+                    transition={{ delay: 0.5, default: { duration: 1.5 } }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     className={`${callOutStyles['callout-container']}`}>
