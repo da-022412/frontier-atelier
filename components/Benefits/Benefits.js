@@ -42,7 +42,7 @@ const Benefits = () => {
                 <Heading style='heading-3' level='3'>
                     Driven by our{' '}
                     <span style={{ color: 'var(--color-accent' }}>
-                        custom spirit
+                        custom spirit.
                     </span>
                 </Heading>
                 <BenefitsBlurbs items={CONTENT} />
