@@ -21,8 +21,18 @@
     }
 }
 
+.blurbMobile .blurb-img {
+    @media(max-width:767px) {
+        padding-bottom: 0;
+    }
+}
+
 .blurb-img {
     padding-bottom: .75rem;
+    
+    img {
+        width: 100%;
+    }
 }
 
 .blurb-mobile {
