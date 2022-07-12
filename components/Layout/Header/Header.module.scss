@@ -7,12 +7,12 @@
 
 .header-container {
     align-items: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 100%);
     display: flex;
     justify-content: center;
     left: 50%;
     margin: auto;
-    padding: 3.75rem 0;
+    padding: 2.75rem 0;
     position: absolute;
     top: 50%;
     transform: translate(-50%, 0);
