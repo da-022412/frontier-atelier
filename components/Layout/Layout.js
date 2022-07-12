@@ -1,5 +1,6 @@
 import Header from './Header';
 import Footer from './Footer';
+import AccentImages from './AccentImages';
 
 const Layout = ({ children }) => {
     return (
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
             <Header />
             <>{children}</>
             <Footer />
+            <AccentImages />
         </>
     );
 };

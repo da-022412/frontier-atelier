@@ -1,0 +1,22 @@
+.accent-img-container {
+    position: relative;
+
+    @media(max-width:980px) {
+        display: none;
+    }
+}
+
+.accent-img {
+    position: fixed;
+    top: 50%;
+    z-index: 1190;
+}
+
+.accent-left {
+    left: 40px;
+}
+
+.accent-right {
+    right: 40px;
+}
+
