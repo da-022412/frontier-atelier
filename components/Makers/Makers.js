@@ -29,10 +29,73 @@ import imageTwenty from '../../assets/images/fabritzio-buonamassa.webp';
 import imageTwentyOne from '../../assets/images/kehinde-wiley.webp';
 import MichaelB from '../../assets/images/michael-beneville.webp';
 import CraigC from '../../assets/images/craig-currie.webp';
+import ChrisC from '../../assets/images/img_chris.jpg';
+import Reg from '../../assets/images/img_reggie.jpg';
+import Helmut from '../../assets/images/img_helmut.jpg';
+import Simon from '../../assets/images/img_simon.jpg';
+import Farouk from '../../assets/images/img_ farouk.jpg';
+import Niel from '../../assets/images/img_niel.jpg';
+import Neal from '../../assets/images/img_neal.jpg';
+import Russ from '../../assets/images/img_russ.jpg';
+import Charles from '../../assets/images/img_charles.jpg';
 
 const CONTENT = {
     tabs: ['All', 'Creative', 'Fashion', 'Architecture', 'Experiences'],
     items: [
+        {
+            img: Charles,
+            title: 'Charles Melcher',
+            copy: 'Bespoke Multimedia Publishing',
+            tab: 'Creative',
+        },
+        {
+            img: Russ,
+            title: 'Russ Campbell',
+            copy: 'Bespoke Eyewear',
+            tab: 'Fashion',
+        },
+        {
+            img: Niel,
+            title: 'Niel Fox',
+            copy: 'Bespoke Luxury Travel',
+            tab: 'Experiences',
+        },
+        {
+            img: Neal,
+            title: 'Neal Callow',
+            copy: '007 Production Designer',
+            tab: 'Creative',
+        },
+        {
+            img: ChrisC,
+            title: 'Chris Courbold',
+            copy: '007 Special Effects Supervisor',
+            tab: 'Creative',
+        },
+        {
+            img: Reg,
+            title: 'Reginald Hudlin',
+            copy: 'Filmmaker Bespoke Content',
+            tab: 'Creative',
+        },
+        {
+            img: Helmut,
+            title: 'Helmut Kinzler',
+            copy: 'Bespoke Metaverse Design',
+            tab: 'Experiences',
+        },
+        {
+            img: Simon,
+            title: 'Simon Sproule',
+            copy: 'Bespoke Restomod Cars',
+            tab: 'Creative',
+        },
+        {
+            img: Farouk,
+            title: 'Farouk Nefzi',
+            copy: 'Bespoke Yacht Design',
+            tab: 'Creative',
+        },
         {
             img: imageOne,
             title: 'Bjakre Ingels',
@@ -42,13 +105,13 @@ const CONTENT = {
         {
             img: imageTwo,
             title: 'Wynton Marsalis',
-            copy: 'Jazz legend Bespoke music scores',
+            copy: 'Jazz legend Bespoke Music Scores',
             tab: 'Creative',
         },
         {
             img: imageThree,
             title: 'Sara Ferrero',
-            copy: 'Creative Director, Valextra Custom bags and luggage',
+            copy: 'Creative Director, Valextra Custom Bags and Luggage',
             tab: 'Creative',
         },
         {
@@ -60,85 +123,79 @@ const CONTENT = {
         {
             img: imageFive,
             title: 'Sir Lawrence Graff',
-            copy: 'CEO, Graff Bespoke jewelry ',
+            copy: 'CEO, Graff Bespoke Jewelry ',
             tab: 'Fashion',
         },
         {
             img: imageSix,
             title: 'Scott Kelly',
-            copy: 'NASA Astronaut Bespoke experiences',
+            copy: 'NASA Astronaut Bespoke Experiences',
             tab: 'Experiences',
         },
         {
             img: imageEight,
             title: 'Pierre Alexis Dumas',
-            copy: 'Creative Director, Hermes Bespoke handbags',
-            tab: 'Fashion',
-        },
-        {
-            img: imageNine,
-            title: 'Sara Ferrero',
-            copy: 'Watchmaker Bespoke timepieces',
+            copy: 'Creative Director, Hermes Bespoke Handbags',
             tab: 'Fashion',
         },
         {
             img: imageTen,
             title: 'Richard Mille',
-            copy: 'Legendary watchmaker Bespoke timepieces',
+            copy: 'Legendary Watchmaker Bespoke Timepieces',
             tab: 'Fashion',
         },
         {
             img: imageEleven,
             title: 'Gerald Genta',
-            copy: 'Legendary watchmaker Bespoke timepieces',
+            copy: 'Legendary Watchmaker Bespoke Timepieces',
             tab: 'Fashion',
         },
         {
             img: imageFourteen,
             title: 'Alex Ricard',
-            copy: 'CEO, Pernod Ricard Bespoke spirits',
+            copy: 'CEO, Pernod Ricard Bespoke Spirits',
             tab: 'Creative',
         },
         {
             img: imageFifteen,
             title: 'Christian Louboutin',
-            copy: 'Designer Bespoke footwear',
+            copy: 'Designer Bespoke Footwear',
             tab: 'Fashion',
         },
         {
             img: imageSixteen,
             title: 'Richelle Parham',
-            copy: 'President - New Ventures, Universal Music Group Bespoke music compositions',
+            copy: 'President - New Ventures, Universal Music Group Bespoke Music Compositions',
             tab: 'Experiences',
         },
         {
             img: imageSeventeen,
             title: 'Marek Reichman',
-            copy: 'Chief Designer, Aston Martin Bespoke autos',
+            copy: 'Chief Designer, Aston Martin Bespoke Autos',
             tab: 'Creative',
         },
         {
             img: imageEighteen,
             title: 'Michael Bay',
-            copy: 'Filmmaker Bespoke movies',
+            copy: 'Filmmaker Bespoke Movies',
             tab: 'Creative',
         },
         {
             img: imageNineteen,
             title: 'Tamara Ralph',
-            copy: 'Founder, Ralph & Russo Bespoke dresses',
+            copy: 'Founder, Ralph & Russo Bespoke Dresses',
             tab: 'Fashion',
         },
         {
             img: imageTwenty,
             title: 'Fabritzio Buonamassa',
-            copy: 'Legendary watch designer Custom timepieces',
+            copy: 'Legendary Watch Designer Custom Timepieces',
             tab: 'Fashion',
         },
         {
             img: imageTwentyOne,
             title: 'Kehinde Wiley',
-            copy: 'Artist Bespoke portraits',
+            copy: 'Artist Bespoke Portraits',
             tab: 'Creative',
         },
         {
