@@ -14,13 +14,11 @@ import imageThree from '../../assets/images/sara-ferrero.webp';
 import imageFour from '../../assets/images/marcus-samuelsson.webp';
 import imageFive from '../../assets/images/lawrence-graff.webp';
 import imageSix from '../../assets/images/scott-kelly.webp';
-import imageSeven from '../../assets/images/fox-harrell.webp';
 import imageEight from '../../assets/images/pierre-alexis-dumas.webp';
 import imageNine from '../../assets/images/sara-ferrero-m.webp';
 import imageTen from '../../assets/images/richard-mille.webp';
 import imageEleven from '../../assets/images/gerald-genta.webp';
 import imageTwelve from '../../assets/images/david-adjaye.webp';
-import imageThirteen from '../../assets/images/neri-oxmn.webp';
 import imageFourteen from '../../assets/images/alex-ricard.webp';
 import imageFifteen from '../../assets/images/christian-louboutin.webp';
 import imageSixteen from '../../assets/images/richelle-parham.webp';
@@ -72,12 +70,6 @@ const CONTENT = {
             tab: 'Experiences',
         },
         {
-            img: imageSeven,
-            title: 'D. Fox Harrell',
-            copy: 'Head of Virtuality Lab, MIT Bespoke VR experiences',
-            tab: 'Experiences',
-        },
-        {
             img: imageEight,
             title: 'Pierre Alexis Dumas',
             copy: 'Creative Director, Hermes Bespoke handbags',
@@ -100,18 +92,6 @@ const CONTENT = {
             title: 'Gerald Genta',
             copy: 'Legendary watchmaker Bespoke timepieces',
             tab: 'Fashion',
-        },
-        {
-            img: imageTwelve,
-            title: 'David Adjaye',
-            copy: 'Former Co-head of National Bank of Canada’s Private Equity Group',
-            tab: 'Fashion',
-        },
-        {
-            img: imageThirteen,
-            title: 'Neri Oxmn',
-            copy: 'Bio-Architect Bespoke organic art',
-            tab: 'Creative',
         },
         {
             img: imageFourteen,
