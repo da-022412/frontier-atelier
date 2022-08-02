@@ -11,10 +11,8 @@ import BodyText from '../BodyText';
 
 import JonC from '../../assets/images/jon-cropper.webp';
 import AndreasT from '../../assets/images/andreas-thurner.webp';
-import MichaelB from '../../assets/images/michael-beneville.webp';
 import RichH from '../../assets/images/rich-hallam.webp';
 import DianeW from '../../assets/images/diane-warshay.webp';
-import CraigC from '../../assets/images/craig-currie.webp';
 import BenjaminH from '../../assets/images/benjamin-heneka.webp';
 import JonB from '../../assets/images/jon-bond.webp';
 
@@ -27,27 +25,17 @@ const CONTENT = [
     {
         img: AndreasT,
         title: 'Andreas Thurner',
-        copy: 'Former Head of Bespoke Design Services Rolls Royce',
-    },
-    {
-        img: MichaelB,
-        title: 'Michael Beneville',
-        copy: 'Founder Beneville Studios Billionaire Custom Publisher',
+        copy: 'Former Head of Exterior Design, Rolls Royce',
     },
     {
         img: RichH,
         title: 'Rich Hallam',
-        copy: 'Personal Concierge Saudi Royal Family',
+        copy: 'Personal Concierge Royal Families',
     },
     {
         img: DianeW,
         title: 'Diane Warshay',
         copy: 'Former Co-head of National Bank of Canada’s Private Equity Group',
-    },
-    {
-        img: CraigC,
-        title: 'Craig Currie',
-        copy: 'Founder SCPS Unlimited Bespoke Object Production',
     },
     {
         img: BenjaminH,

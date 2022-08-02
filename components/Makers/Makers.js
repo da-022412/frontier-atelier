@@ -29,6 +29,8 @@ import imageEighteen from '../../assets/images/michael-bay.webp';
 import imageNineteen from '../../assets/images/tamara-ralph.webp';
 import imageTwenty from '../../assets/images/fabritzio-buonamassa.webp';
 import imageTwentyOne from '../../assets/images/kehinde-wiley.webp';
+import MichaelB from '../../assets/images/michael-beneville.webp';
+import CraigC from '../../assets/images/craig-currie.webp';
 
 const CONTENT = {
     tabs: ['All', 'Creative', 'Fashion', 'Architecture', 'Experiences'],
@@ -158,6 +160,17 @@ const CONTENT = {
             title: 'Kehinde Wiley',
             copy: 'Artist Bespoke portraits',
             tab: 'Creative',
+        },
+        {
+            img: MichaelB,
+            title: 'Michael Beneville',
+            copy: 'Founder Beneville Studios Billionaire Custom Publisher',
+            tab: 'Creative',
+        },
+        {
+            img: CraigC,
+            title: 'Craig Currie',
+            copy: 'Founder SCPS Unlimited Bespoke Object Production',
         },
     ],
 };
