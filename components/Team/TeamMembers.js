@@ -1,6 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper';
 
 import 'swiper/css';
+import 'swiper/css/navigation';
+
 import teamStyles from './Team.module.scss';
 
 import Blurb from '../Blurb';
@@ -10,6 +13,8 @@ const TeamMembers = ({ items }) => {
         <Swiper
             className={`${teamStyles['team-members']}`}
             spaceBetween={20}
+            navigation={true}
+            modules={[Navigation]}
             breakpoints={{
                 300: {
                     spaceBetween: 10,
