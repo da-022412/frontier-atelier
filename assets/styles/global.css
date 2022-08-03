@@ -45,4 +45,9 @@
     .satellite {
         background-position: left;
     }
+
+    .vehicle {
+        background-position: 70% 20%;
+        background-size: 700px;
+    }
 }
