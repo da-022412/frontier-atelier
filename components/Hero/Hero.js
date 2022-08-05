@@ -50,10 +50,10 @@ const Hero = () => {
                                     Frontier Atelier
                                 </span>{' '}
                                 is a bespoke, private online luxury shopping
-                                platform enabling patrons to purchase one-of-one
-                                items and experiences curated by creators and
-                                artisans from the far reaches of this beautiful
-                                world.
+                                platform enabling patrons to design and purchase
+                                one-of-one items and experiences curated by
+                                creators and artisans from the far reaches of
+                                this beautiful world.
                             </Heading>
                         </Container>
                     </motion.div>
