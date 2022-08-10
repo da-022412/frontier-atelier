@@ -34,7 +34,7 @@ const CallOut = () => {
                     </BodyText>
                     <a
                         className={`${callOutStyles['btn-container']}`}
-                        href='tel:3125087496'>
+                        href='tel:9493006030'>
                         <div className={callOutStyles.btn}>
                             <Image
                                 src={Phone}
