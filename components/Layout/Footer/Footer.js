@@ -16,7 +16,7 @@ const Footer = () => {
                                 curiosity sandbox
                             </span>
                         </Heading>
-                        <BodyText>312.508.7496</BodyText>
+                        <BodyText>949.300.6030</BodyText>
                     </div>
                 </Container>
             </div>
