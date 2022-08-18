@@ -26,7 +26,6 @@ import imageSeventeen from '../../assets/images/marek-reichman.webp';
 import imageEighteen from '../../assets/images/michael-bay.webp';
 import imageNineteen from '../../assets/images/tamara-ralph.webp';
 import imageTwenty from '../../assets/images/fabritzio-buonamassa.webp';
-import imageTwentyOne from '../../assets/images/kehinde-wiley.webp';
 import MichaelB from '../../assets/images/michael-beneville.webp';
 import CraigC from '../../assets/images/craig-currie.webp';
 import ChrisC from '../../assets/images/img_chris.jpg';
@@ -191,12 +190,6 @@ const CONTENT = {
             title: 'Fabritzio Buonamassa',
             copy: 'Legendary Watch Designer Custom Timepieces',
             tab: 'Fashion',
-        },
-        {
-            img: imageTwentyOne,
-            title: 'Kehinde Wiley',
-            copy: 'Artist Bespoke Portraits',
-            tab: 'Creative',
         },
         {
             img: MichaelB,
