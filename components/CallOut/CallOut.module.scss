@@ -1,3 +1,20 @@
+.callout-video-container {
+    padding: 7.5rem 0 3.25rem;
+    text-align: center;
+
+    h4 {
+        padding-bottom: 2rem;
+    }
+
+    iframe {
+        width: 100%;
+        
+        @media(max-width:767px) {
+            height: 360px;
+        }
+    }
+}
+
 .callout-container {
     padding: 7.5rem 0;
     text-align: center;

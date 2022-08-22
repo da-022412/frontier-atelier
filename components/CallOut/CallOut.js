@@ -14,6 +14,24 @@ import Phone from '../../assets/images/bxs_phone.webp';
 const CallOut = () => {
     return (
         <Container>
+            <motion.div
+                initial={{ opacity: 0 }}
+                transition={{ delay: 0.5, default: { duration: 1.5 } }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className={`${callOutStyles['callout-video-container']}`}>
+                <Heading style='heading-4' level='4'>
+                    A new docuseries about the brilliant designers who create
+                    objects of desire
+                </Heading>
+                <iframe
+                    src='https://player.vimeo.com/video/740867914'
+                    width='1280'
+                    height='720'
+                    frameBorder='0'
+                    allow='autoplay; fullscreen'
+                    allowFullScreen></iframe>
+            </motion.div>
             <ContainerTight>
                 <motion.div
                     initial={{ opacity: 0 }}
