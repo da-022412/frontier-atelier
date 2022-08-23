@@ -32,7 +32,7 @@
 }
 
 .vehicle {
-    background-image: url('../images/frontier-atelier-vehicle.webp');
+    background-image: url('../images/fa-batmobile.webp');
 }
 
 @media(max-width:767px) {
@@ -47,7 +47,6 @@
     }
 
     .vehicle {
-        background-position: 70% 20%;
         background-size: 700px;
     }
 }

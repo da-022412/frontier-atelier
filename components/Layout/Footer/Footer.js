@@ -16,7 +16,9 @@ const Footer = () => {
                                 curiosity sandbox
                             </span>
                         </Heading>
-                        <BodyText>949.300.6030</BodyText>
+                        <a href='mailto:jon@futurlogic.com'>
+                            <BodyText>jon@futurlogic.com</BodyText>
+                        </a>
                     </div>
                 </Container>
             </div>
