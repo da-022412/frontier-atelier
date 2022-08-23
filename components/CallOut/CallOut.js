@@ -9,7 +9,7 @@ import ContainerTight from '../ContainerTight';
 import Heading from '../Heading';
 import BodyText from '../BodyText';
 
-import Phone from '../../assets/images/bxs_phone.webp';
+import Email from '../../assets/images/email-icon.webp';
 
 const CallOut = () => {
     return (
@@ -52,13 +52,13 @@ const CallOut = () => {
                     </BodyText>
                     <a
                         className={`${callOutStyles['btn-container']}`}
-                        href='tel:9493006030'>
+                        href='mailto:jon@futurlogic.com'>
                         <div className={callOutStyles.btn}>
                             <Image
-                                src={Phone}
-                                height={24}
-                                width={24}
-                                alt='Phone'
+                                src={Email}
+                                height={20}
+                                width={20}
+                                alt='Email'
                             />{' '}
                             Let&apos;s Talk
                         </div>
