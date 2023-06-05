@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import headerStyles from './Header.module.scss';
 
-import Logo from '../../../assets/images/logo.svg';
+import Logo from '../../../assets/images/logo-fa-wayne.webp';
 
 const Header = () => {
     return (
@@ -14,8 +14,8 @@ const Header = () => {
                         <a>
                             <Image
                                 src={Logo}
-                                height='65'
-                                width='50'
+                                height='80'
+                                width='235'
                                 alt='Logo'
                             />
                         </a>
